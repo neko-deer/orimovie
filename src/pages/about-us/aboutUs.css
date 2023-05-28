@@ -1,0 +1,48 @@
+.about-us {
+  min-height: 100vh;
+  padding: 75px 0 55px;
+  display: grid;
+  place-items: center;
+  /* background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(246.22, 92%, 47%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 auto;
+  margin: 15px 12px 0;
+  margin-bottom: 25px;
+  background-color: rgba(255, 255, 255, 0.140);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+          box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+  transition: transform 0.480s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border: 2.5px solid #0ea5e9;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card .rounded-circle {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,211 @@
+body {
+  background-image: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+}
+
+.trending-movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px
+}
+
+.movie-card {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.movie-card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.button-detail {
+  padding: 10px 20px;
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  margin-left: -20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.popup-overlay-mov {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content-mov {
+  background-color: #233545;
+  color: #d6d4d4;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.similar-movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.similar-movie-poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .trending-movie-container {
+    justify-content: center;
+  }
+  .trending-movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: 47px;
+  }
+  .button-detail {
+    padding: 10px 15px;
+    font-size: 14px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-h2 {
+    margin-top: 50px;
+  }
+  .search-container {
+    margin: 10px;
+    margin-bottom: 30px;
+  }
+  .trending-movie-container {
+    justify-content: center;
+  }
+  .trending-movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .movie-card img {
+    width: 150px;
+    height: 225px;
+  }
+  .button-detail {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+.trailer-container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.list-actor {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.list-actor li {
+  margin: 12px;
+  text-align: center;
+  flex: 1;
+}
+img.popup-mov-poster {
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.similar-movies {
+  display: flex;
+  gap: 10px;
+}
+
+.similar-movies img {
+  cursor: pointer;
+  border-radius: 5px;
+}
+.similar-movies img:hover {
+  box-shadow: 1px 9px 20px 1px #647d94;
+}
+
+.popup-content-mov h2 {
+  font-weight: 800;
+}
+
+.movie-meta {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.movie-meta span {
+  font-weight: 500;
+}
+
+.trending-movie-container > div {
+  flex: 45%;
+}
+
+.up-coming-btn {
+  padding: 0 135px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .up-coming-btn {
+    padding: 0 95px;
+  }
+}
+
+@media (max-width: 768px) {
+  .up-coming-btn {
+    padding: 0 38px;
+  }
+}
+
+@media (max-width: 590px) {
+  .up-coming-btn {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .trending-movie-container > div {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

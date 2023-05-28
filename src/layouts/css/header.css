@@ -1,0 +1,42 @@
+.navbar-brand {
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Memberikan padding pada bagian judul navbar */
+  font-family: 'Cinzel Decorative Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.navbar-nav {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar-toggler {
+  /* padding: 0.5rem ; */
+  margin: 0.5rem; /* Memberikan padding pada bagian hamburger button */
+}
+a.nav-link {
+  margin: auto;
+  color: whitesmoke
+}
+
+/* Logo Navbar */
+@import url('../../fonts/fonts.css');
+.navbar-brand {
+  padding: 0.5rem 1rem;
+  margin-right: auto; /* Memberikan padding pada bagian judul navbar */
+  font-family: 'Cinzel Decorative Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+@import url('../../fonts/fonts.css');
+.navbar-link {
+  font-family: 'Cinzel Regular', sans-serif;
+}
+
+
+
+

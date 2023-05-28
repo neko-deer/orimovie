@@ -1,0 +1,281 @@
+/* TrendingMovies.css */
+body{
+  background-image: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
+}
+
+.movie-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 20px ;
+  
+}
+
+.movie-carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.movie-carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  
+}
+
+.movie-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.button-container {
+  margin-bottom: 20px;
+
+}
+.details-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+h3{
+  color : whitesmoke;
+}
+.detail-button {
+  padding: 10px 20px;
+  background: transparent;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  margin-left: -20px;
+  margin-top: -50px;
+ 
+}
+
+.trailer-button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
+/* Gaya untuk header */
+.trending-movies-header,
+.trending-tv-series-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+
+/* Gaya untuk kontainer */
+.trending-movies-container,
+.trending-tv-series-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+.trending-movies-container{
+  margin-bottom: 50px;
+}
+/* Gaya untuk card */
+.movie-card,
+.series-card {
+  display: block;
+  margin-left: 17px;
+  text-align: center;
+}
+.movie-card img:hover, .series-card img:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 20px 8px #081b2f;
+}
+
+/* Gaya untuk gambar */
+.movie-card img,
+.series-card img {
+  width: 100%;
+  height: auto;  
+  border-radius: 5px;
+
+ 
+  
+}
+
+/* Gaya untuk judul */
+.movie-card h3,
+.series-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Gaya untuk tautan */
+.movie-card a,
+.series-card a {
+  display: block;
+  margin-top: 5px;
+  color: #888888;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk hover pada tautan */
+.movie-card a:hover,
+.series-card a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .trending-movies-container > div, .trending-tv-series-container > div {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+/* Gaya untuk responsivitas */
+@media (max-width: 768px) {
+  .trending-movies-container,
+  .trending-tv-series-container {
+    justify-content: center;
+  }
+
+  .trending-movies-header,
+  .trending-tv-series-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  /* padding: 20px; */
+}
+
+.trending-movies-header h2,
+.trending-tv-series-header h2{
+  margin-left: 10px;
+}
+.movie-carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  position: relative;
+  margin: 20px auto;
+}
+
+.popup-movie-poster {
+  width: 200px;
+  margin-right: 20px; 
+  margin-bottom: 20px;
+}
+
+.popup-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  background-color: #c00912;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-content ul li {
+  margin-bottom: 10px;
+}
+.cast{
+  margin-top: 20px;
+}
+.cast-profile-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.cast-profile-image {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.popup-overlay-mov h3 {
+  color: #7f95a6;
+}
+
+.trending-movies-container > div, .trending-tv-series-container > div  {
+  flex: 45%;
+}
+

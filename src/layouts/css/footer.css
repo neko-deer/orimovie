@@ -1,0 +1,56 @@
+.footer {
+  background-color: black;
+  color: whitesmoke;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.footer-section h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+
+.social-media-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+/* .title p{
+  margin-left: 0px;
+  margin-top: 40px;
+} */
+@import url('../../fonts/fonts.css');
+.text-white, .p, .title-quick{
+  font-family: 'Cinzel Regular', sans-serif;
+  text-decoration: none;
+}
