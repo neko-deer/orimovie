@@ -2,5 +2,5 @@
 
 orimovie.netlify.app
 
-## Available Scripts
+## Anggota
 Arya, Teuku, Shabrina, Angel
